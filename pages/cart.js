@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { parseCookies } from "nookies";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import baseUrl from "../helpers/baseUrl";
 
 if (typeof window !== "undefined") {
   window.onload = (event) => {
@@ -61,7 +62,7 @@ const Cart = () => {
 
   const handleCheckout = async (paymentInfo) => {
     console.log(paymentInfo);
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/payment`, {
+    const res = await fetch(`${baseUrl}/api/payment`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -91,9 +92,6 @@ const Cart = () => {
           theme: "light",
         }
       );
-      setTimeout(() => {
-        router.push("/login");
-      }, 4000);
     } else {
       toast.success("Order Placed Successfully!", {
         position: "top-right",
@@ -105,7 +103,9 @@ const Cart = () => {
         progress: undefined,
         theme: "light",
       });
-      router.push("/");
+      setTimeout(() => {
+        router.push("/");
+      }, 4000);
     }
   };
 
