@@ -91,9 +91,6 @@ const Cart = () => {
           theme: "light",
         }
       );
-      setTimeout(() => {
-        router.push("/login");
-      }, 4000);
     } else {
       toast.success("Order Placed Successfully!", {
         position: "top-right",
@@ -105,9 +102,12 @@ const Cart = () => {
         progress: undefined,
         theme: "light",
       });
-      router.push("/");
+      setTimeout(() => {
+        router.push("/");
+      }, 4000);
     }
   };
+
 
   return (
     <>
