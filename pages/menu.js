@@ -16,10 +16,6 @@ const Menu = ({ fooditems }) => {
     return item["category"] == "Dinner";
   });
 
-  console.log(breakfastItems);
-  console.log(lunchItems);
-  console.log(dinnerItems);
-
   const moveTo = (e) => {
     const id = e.target.id;
     document.querySelector(`#meal${id}`).scrollIntoView({
