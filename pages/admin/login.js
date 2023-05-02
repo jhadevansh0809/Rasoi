@@ -65,8 +65,6 @@ const Login = () => {
               <h1 class="text-xl font-bold leading-tight tracking-tight text-black">
                 Admin Login Panel
               </h1>
-
-              <p className="text-center font-bold">---------- OR -----------</p>
               <form
                 class="space-y-4 md:space-y-6"
                 onSubmit={(e) => userLogin(e)}
