@@ -115,15 +115,6 @@ const Login = () => {
                 <button type="submit" class="btn btn-green">
                   Sign in
                 </button>
-                <p class="text-sm text-black">
-                  Don’t have an account yet?{" "}
-                  <Link
-                    href="/signup"
-                    class="font-bold text-black hover:underline "
-                  >
-                    Sign up
-                  </Link>
-                </p>
               </form>
             </div>
           </div>
