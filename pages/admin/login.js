@@ -65,8 +65,6 @@ const Login = () => {
               <h1 class="text-xl font-bold leading-tight tracking-tight text-black">
                 Admin Login Panel
               </h1>
-
-              <p className="text-center font-bold">---------- OR -----------</p>
               <form
                 class="space-y-4 md:space-y-6"
                 onSubmit={(e) => userLogin(e)}
@@ -117,15 +115,6 @@ const Login = () => {
                 <button type="submit" class="btn btn-green">
                   Sign in
                 </button>
-                <p class="text-sm text-black">
-                  Don’t have an account yet?{" "}
-                  <Link
-                    href="/signup"
-                    class="font-bold text-black hover:underline "
-                  >
-                    Sign up
-                  </Link>
-                </p>
               </form>
             </div>
           </div>

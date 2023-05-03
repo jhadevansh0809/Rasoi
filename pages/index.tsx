@@ -30,8 +30,8 @@ export default function Home() {
         <MyHeyUser/>
         <Carousel/>
         <div className='my-24 offer-container p-10 saturate-50 h-96 ave-font text-2xl text-white flex flex-col justify-center items-center'>
-          <p>With us, you can taste the butter and the chicken</p>
-          <p className='py-2'>“LOHRI SPECIAL” ALL YOU CAN EAT !! $24.95</p>
+          <p>With us, you can taste the PANEER BUTTER MASALA</p>
+          <p className='py-2'>“DIWALI SPECIAL” ALL YOU CAN EAT @ &#8377;140!!</p>
           <p>This Friday, Saturday & Sunday</p>
         </div>
         <Blend/>

@@ -37,11 +37,14 @@ const Cart = () => {
     setPayablePrice(price);
   };
 
+  // console.log(token);
+
   const cartItems =
     typeof window !== "undefined" && localStorage.getItem("cart")
       ? JSON.parse(localStorage.getItem("cart")).cartItems
       : [];
 
+  // console.log(cartItems);
 
   const orderItems = [];
 
@@ -50,6 +53,7 @@ const Cart = () => {
     orderItems.push(food);
   });
 
+  // console.log(orderItems);
 
   localStorage.setItem(
     "orderDetail",
@@ -72,7 +76,8 @@ const Cart = () => {
       }),
     });
     const res2 = await res.json();
-
+    // console.log(res2);
+    // router.push("/");
     if (res2.error) {
       toast.error(
         "Please login to place an order! Wait ,redirecting you to the login page",
